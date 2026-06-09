@@ -22,7 +22,7 @@ export default function Home() {
             Tactical Hardware Vault
           </h2>
           <span className="text-xs font-bold text-[#e5a93c] tracking-widest uppercase animate-pulse">
-            // Live Inventory
+            Live Inventory
           </span>
         </div>
 
