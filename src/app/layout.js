@@ -7,7 +7,7 @@ import Navbar from "../components/Navbar";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Nexus Gaming | Premium Gaming Store",
+  title: "Nexus Gaming | Store",
   description: "Get the best premium gaming peripherals and fitness gear.",
 };
 
