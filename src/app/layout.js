@@ -1,24 +1,22 @@
-import { Inter } from "next/font/google";
 import "./globals.css";
-import { CartProvider } from "../context/CartContext";
-import Navbar from "../components/Navbar";
-
-
-const inter = Inter({ subsets: ["latin"] });
+import { CartProvider } from "../context/CartContext"; // Context ka import
+import Navbar from "@/components/Navbar"; // Agar navbar chahiye toh
 
 export const metadata = {
-  title: "Nexus Gaming | Store",
-  description: "Get the best premium gaming peripherals and fitness gear.",
+  title: "Nexus Gaming Store",
+  description: "Your ultimate gaming store",
+  icons:{
+    icon:"/favicon.ico",
+  },
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} bg-[#0b0c10] text-[#f5f5f7]`}>
+      <body className="bg-[#0d0d0f] text-[#f5f5f7]">
         <CartProvider>
           <Navbar />
           {children}
-          
         </CartProvider>
       </body>
     </html>
